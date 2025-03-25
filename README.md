@@ -45,9 +45,7 @@ This project is a **customized version of [browser-use](https://github.com/brows
 
 
 
-## Citation
-
-If you use Browser Use in your research or project, please cite:
+###Browser-USe Citation
 
 ```bibtex
 @software{browser_use2024,
