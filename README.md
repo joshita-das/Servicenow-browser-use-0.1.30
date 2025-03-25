@@ -21,25 +21,28 @@ This project is a **customized version of [browser-use](https://github.com/brows
 # Quick start
 
 1. Clone this repository and cd inside the project
-2. Create a virtual python environmet 
-`uv venv --python 3.11`
+2. Create a virtual python environmet </br>
+`uv venv --python 3.11` </br>
 `uv pip install -e ".[dev]"`
 3. Install playwright
 `playwright install `
-4. Set up your environment variable file, ask the appropriate authority for the credentials
+4. Set up your environment variable file, ask the appropriate authority for the credentials </br>
 `cp .env.example .env`
 
 
-# Demos
+# Demo
 1. Navigate to examples folder
 2. In the main function you can customize the prompt, i.e. the task to perform desired tests.
-`if __name__ == "__main__":`
-    `load_dotenv()`
-    `task = "login with username: admin, password: admin" + " navigate to Workflow Studio" + "check if the page is `
-    `loaded"`
-    `llm_model = "gpt-4o"`
-    `asyncio.run(main(task, llm_model))`
-3. In the terminal run `python3 script.py`
+```
+if __name__ == "__main__":
+    load_dotenv()
+    task = "login with username: admin, password: admin" + " navigate to Workflow Studio" + "check if the page is 
+    loaded"
+    llm_model = "gpt-4o"
+    asyncio.run(main(task, llm_model))
+```
+3. In the terminal run </br>
+`python3 script.py`
 
 
 
